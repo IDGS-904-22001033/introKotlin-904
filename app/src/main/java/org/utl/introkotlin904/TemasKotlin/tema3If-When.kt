@@ -25,4 +25,11 @@ fun main(){
         println("No tiene mucho sueldo")
     }
 
+    //when
+    val obj = "Hello"
+    when (obj){
+        "1" -> println("Uno")
+        "Hello" -> println("Dos")
+        else -> println("no hay coincidencia")
+    }
 }
