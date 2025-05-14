@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tema1app.Ejemplo1Activity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:hint="Ingresa numero 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:hint="Ingresa numero 2"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="188dp"
+        android:onClick="seleccionarOperacionBasica"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="92dp"
+        android:text="Resultado 0.0"
+        android:textSize="24sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="276dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:hint="Multiplicación"
+            app:layout_constraintBottom_toTopOf="@id/btn1"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="División"
+            app:layout_constraintBottom_toTopOf="@id/btn1"
+            app:layout_constraintStart_toEndOf="@id/rb1"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Suma"
+            app:layout_constraintBottom_toTopOf="@id/btn1"
+            app:layout_constraintStart_toEndOf="@id/rb2"
+            tools:layout_editor_absoluteY="203dp" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:hint="Resta"
+            app:layout_constraintBottom_toTopOf="@id/btn1"
+            app:layout_constraintStart_toEndOf="@id/rb3"
+            tools:layout_editor_absoluteY="203dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
