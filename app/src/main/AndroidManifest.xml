@@ -13,9 +13,17 @@
         android:theme="@style/Theme.IntroKotlin904"
         tools:targetApi="31">
         <activity
-            android:name=".Tem2App.ResultadoActivity"
+            android:name=".Tema4.Ejemplo4Activity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity
+            android:name=".Tema3.Ejemplo3Activity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".Tem2App.ResultadoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".Tem2App.Ejemplo2Activity"
             android:exported="true"
@@ -33,21 +41,15 @@
         <activity
             android:name=".practicaCinepolis.Practica_Cinepolis"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".tema1app.Ejemplo2Activity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".tema1app.Ejemplo1Activity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight" />
     </application>
 
 </manifest>

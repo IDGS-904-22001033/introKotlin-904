@@ -27,5 +27,16 @@
         android:layout_height="wrap_content"
         android:text="Ejemplo2"/>
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo3"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo4"/>
 
 </LinearLayout>
